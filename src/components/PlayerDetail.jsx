@@ -45,12 +45,24 @@ export default function PlayerDetail() {
         <img src={player.imageUrl} alt={`image of ${player.name}`} />
       </div>
       <div>
-        <p>ID: {player.id}</p>
-        <p>Breed: {player.breed}</p>
-        <p>Status: {player.status}</p>
-        <p>Team ID: {player.teamId}</p>
-        <p>Team Name: {player.team.name}</p>
-        <p>Cohort ID: {player.cohortId}</p>
+        <p>
+          <strong>ID:</strong> {player.id}
+        </p>
+        <p>
+          <strong>Breed:</strong> {player.breed}
+        </p>
+        <p>
+          <strong>Status:</strong> {player.status}
+        </p>
+        <p>
+          <strong>Team ID:</strong> {player.teamId}
+        </p>
+        <p>
+          <strong>Team Name:</strong> {player.team.name}
+        </p>
+        <p>
+          <strong>Cohort ID:</strong> {player.cohortId}
+        </p>
         <Link to={"/"}>
           <button id="return-button">Return to Roster</button>
         </Link>

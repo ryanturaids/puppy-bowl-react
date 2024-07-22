@@ -5,6 +5,16 @@
   gap: 1rem;
 }
 
+.search-bar {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .search-box {
   cursor: text;
+  font-size: 1.5rem;
+  width: 20rem;
 }
