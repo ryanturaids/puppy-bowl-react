@@ -56,8 +56,8 @@ export default function PlayerDetail() {
           <strong>Team ID:</strong> {player.teamId || "no team"}
         </p>
         <p>
-          <strong>Team Name:</strong>
-          {player.team?.name || " no team"}
+          <strong>Team Name:</strong>&nbsp;
+          {player.team?.name || "no team"}
         </p>
         <p>
           <strong>Cohort ID:</strong> {player.cohortId}
