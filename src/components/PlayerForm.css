@@ -1,0 +1,20 @@
+.form-container,
+.add-player-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form-container {
+  align-items: center;
+  width: 100%;
+}
+
+.add-player-form {
+  width: 20rem;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+}

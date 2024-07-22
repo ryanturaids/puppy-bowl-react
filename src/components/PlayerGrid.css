@@ -1,0 +1,10 @@
+.player-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.search-box {
+  cursor: text;
+}

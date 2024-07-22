@@ -1,0 +1,8 @@
+@media (min-width: 700px) {
+  .player-detail {
+    display: flex;
+  }
+  .player-detail img {
+    max-height: 70svh;
+  }
+}
