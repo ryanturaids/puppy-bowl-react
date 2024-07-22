@@ -29,11 +29,11 @@ export default function PlayerDetail() {
   }, [id]);
 
   if (loading) {
-    return <div>Loading player details...</div>;
+    return <div className="message-div">Loading player details...</div>;
   }
 
   if (!player) {
-    return <div>Player not found</div>;
+    return <div className="message-div">Player not found</div>;
   }
 
   return (

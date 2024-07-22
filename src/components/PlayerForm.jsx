@@ -30,7 +30,7 @@ export default function PlayerForm() {
     }
   };
   if (submit) {
-    return <div>Player Added!</div>;
+    return <div className="submission-message">Player Added!</div>;
   }
   return (
     <div className="form-container">

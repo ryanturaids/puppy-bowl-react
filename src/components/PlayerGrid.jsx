@@ -64,7 +64,7 @@ export default function PlayerGrid() {
   };
 
   if (loading) {
-    return <div className="loading-message">Loading players...</div>;
+    return <div className="message-div">Loading players...</div>;
   }
 
   if (filteredPlayers.length === 0 && searchInput) {
