@@ -18,3 +18,15 @@
   font-size: 1.5rem;
   width: 20rem;
 }
+
+.empty-search-message {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.empty-search-message > p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+}
