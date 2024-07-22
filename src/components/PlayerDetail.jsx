@@ -6,9 +6,7 @@ import "./PlayerDetail.css";
 export default function PlayerDetail() {
   const { id } = useParams();
   const [player, setPlayer] = useState(null);
-  const [team, setTeam] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [teamLoading, setTeamLoading] = useState(true);
 
   useEffect(() => {
     const fetchPlayerDetails = async () => {
@@ -41,7 +39,7 @@ export default function PlayerDetail() {
   return (
     <div className="player-detail">
       <div>
-        <h1>{player.name}</h1>
+        <h1>{player.name || "no name"}</h1>
         <img src={player.imageUrl} alt={`image of ${player.name}`} />
       </div>
       <div>
@@ -49,16 +47,17 @@ export default function PlayerDetail() {
           <strong>ID:</strong> {player.id}
         </p>
         <p>
-          <strong>Breed:</strong> {player.breed}
+          <strong>Breed:</strong> {player.breed || "no breed"}
         </p>
         <p>
-          <strong>Status:</strong> {player.status}
+          <strong>Status:</strong> {player.status || "no status"}
         </p>
         <p>
-          <strong>Team ID:</strong> {player.teamId}
+          <strong>Team ID:</strong> {player.teamId || "no team"}
         </p>
         <p>
-          <strong>Team Name:</strong> {player.team.name}
+          <strong>Team Name:</strong>
+          {player.team?.name || " no team"}
         </p>
         <p>
           <strong>Cohort ID:</strong> {player.cohortId}
